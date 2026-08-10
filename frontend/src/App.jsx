@@ -5,7 +5,7 @@ const App = () => {
 
   // Fetch data from the backend when the component loads
   useEffect(() => {
-    fetch('http://localhost:5000/api/message')
+    fetch('https://practice-nqtt.vercel.app/api/message')
       .then(res => res.json())
       .then(data => setMessage(data.message))
       .catch(err => console.error("Error fetching data:", err));
